@@ -1,4 +1,4 @@
-// import CartWidget from "./CartWidget";
+import CartWidget from "./CartWidget";
 import NavLink from "../NavLink/NavLink";
 import Logo from "../Logo/Logo";
 import Swal from "sweetalert2";
@@ -13,11 +13,10 @@ function NavBar() {
     <header className="NavBar">
       <Logo />
       <ul className="items">
-        <NavLink title="Crystal Care" handleOnClick={handleClick} />
-        <NavLink title="Nosotros" handleOnClick={handleClick} />
-        <NavLink title="Servicios" handleOnClick={handleClick} />
-        <NavLink title="Destacado" handleOnClick={handleClick} />
+        <NavLink title="Catalogo" handleOnClick={handleClick} />
+        <NavLink title="Formas de Pago" handleOnClick={handleClick} />
         <NavLink title="Contacto" handleOnClick={handleClick} />
+        <CartWidget title="Carrito" handleOnClick={handleClick} />
       </ul>
     </header>
   );

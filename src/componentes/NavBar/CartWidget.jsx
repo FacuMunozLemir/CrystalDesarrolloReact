@@ -1,11 +1,10 @@
 import cartImg from "../../assets/images/carrito.png";
 
-function CartWidget() {
+export default function CartWidget({ title, handleOnClick }) {
   return (
-    <div>
+    <li onClick={handleOnClick}>
+      {title}
       <img src={cartImg} alt="" width={"40"} />
-    </div>
+    </li>
   );
 }
-
-export default CartWidget;
