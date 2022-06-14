@@ -1,4 +1,4 @@
-import CartWidget from "./CartWidget";
+import CartWidget from "../CartWidget/CartWidget";
 import NavLink from "../NavLink/NavLink";
 import Logo from "../Logo/Logo";
 import Swal from "sweetalert2";

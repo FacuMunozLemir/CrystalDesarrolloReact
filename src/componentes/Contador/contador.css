@@ -1,0 +1,39 @@
+.contador {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.contador .btn {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  margin: 1.5rem;
+  border-radius: 50%;
+}
+
+.contador .btn-sumar {
+  color: #f8f9fa;
+  background-color: #543c8b;
+  border: 0.07rem solid #543c8b;
+}
+.contador .btn-sumar:hover {
+  cursor: pointer;
+  background-color: #f8f9fa;
+  color: #543c8b;
+  transition: 0.3s all ease;
+}
+.contador .btn-restar {
+  color: #543c8b;
+  background-color: #f8f9fa;
+  border: 0.07rem solid #543c8b;
+}
+.contador .btn-restar:hover {
+  cursor: pointer;
+  color: #f8f9fa;
+  background-color: #543c8b;
+  transition: 0.3s all ease;
+}
