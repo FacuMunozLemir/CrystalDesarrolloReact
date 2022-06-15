@@ -1,7 +1,14 @@
+import "./main.css";
+import Tarjeta from "../Tarjeta/Tarjeta";
+import Contador from "../Contador/Contador";
+
 function Main() {
   return (
-    <main>
-      <h1>Esto es el Main</h1>
+    <main className="main">
+      <h1>Catálogo de software</h1>
+      <section className="main-catalogo">
+        <Tarjeta />
+      </section>
     </main>
   );
 }

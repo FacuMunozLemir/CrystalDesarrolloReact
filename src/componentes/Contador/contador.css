@@ -4,14 +4,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 .contador .btn {
-  width: 3rem;
-  height: 3rem;
-  font-size: 1.5rem;
   margin: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
   border-radius: 50%;
 }
 

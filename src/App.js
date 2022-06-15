@@ -1,6 +1,6 @@
 import "./App.css";
 import NavBar from "./componentes/NavBar/NavBar";
-import Main from "./componentes/Main/Main.js";
+import Main from "./componentes/Main/Main.jsx";
 import Contador from "./componentes/Contador/Contador";
 import { useEffect, useState } from "react";
 
@@ -20,9 +20,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-
       <Main />
-      <Contador />
     </div>
   );
 }
