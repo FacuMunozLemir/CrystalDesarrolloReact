@@ -13,7 +13,7 @@ function NavBar() {
     <header className="NavBar">
       <Logo />
       <ul className="items">
-        <NavLink title="Catalogo" handleOnClick={handleClick} />
+        <NavLink title="Catálogo" handleOnClick={handleClick} />
         <NavLink title="Formas de Pago" handleOnClick={handleClick} />
         <NavLink title="Contacto" handleOnClick={handleClick} />
         <CartWidget title="Carrito" handleOnClick={handleClick} />
