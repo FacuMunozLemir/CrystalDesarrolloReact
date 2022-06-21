@@ -1,7 +1,7 @@
 .card {
   margin: 1.5rem 0rem;
   width: 15rem;
-  height: 100%;
+  height: auto;
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -16,16 +16,34 @@
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .card .descripcion {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
-.card .areaboton {
+.card .areaBoton {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
+}
+
+.card .areaBoton button {
+  padding: 0.5rem;
+  width: 7rem;
+  text-align: center;
+  background-color: #543c8b;
+  color: #f8f9fa;
+  border-radius: 1rem;
+  border: none;
+}
+
+.card .areaBoton button a {
+  text-decoration: none;
+  color: #f8f9fa;
 }

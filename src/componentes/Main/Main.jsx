@@ -1,13 +1,12 @@
 import "./main.css";
-import Tarjeta from "../Tarjeta/Tarjeta";
-import Contador from "../Contador/Contador";
+import ItemListContainer from "../ItemListContainer/ItemListContainer";
 
 function Main() {
   return (
     <main className="main">
       <h1>Catálogo de software</h1>
       <section className="main-catalogo">
-        <Tarjeta />
+        <ItemListContainer saludo="Catálogo de Software" />
       </section>
     </main>
   );

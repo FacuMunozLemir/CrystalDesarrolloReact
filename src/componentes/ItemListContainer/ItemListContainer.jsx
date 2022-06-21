@@ -30,9 +30,6 @@ const ItemListContainer = ({ saludo }) => {
 
   return (
     <div className="item-list-container">
-      <h2>{saludo}</h2>
-      <ItemCount stock={10} initial={1} />
-      <button className="btn btn-comprar">Comprar</button>
       <ItemList items={products} />
     </div>
   );

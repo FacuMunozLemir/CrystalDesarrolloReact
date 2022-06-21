@@ -1,17 +1,26 @@
 import "./App.css";
 import NavBar from "./componentes/NavBar/NavBar";
-import ItemListContainer from "./componentes/ItemListContainer/ItemListContainer";
+import ItemExpandido from "./componentes/itemExpandido/ItemExpandido";
 import Main from "./componentes/Main/Main.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Contador from "./componentes/Contador/Contador";
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <ItemListContainer saludo="Item List Container" />
-      <Main />
+    <div className="container" name="app">
+      <BrowserRouter>
+        <NavBar />
+
+        <Routes>
+          <Route exact path="/" element={<Main />} />
+          <Route path="/descripcion" element={<ItemExpandido />} />
+        </Routes>
+      </BrowserRouter>
     </div>
+    // <div className="App">
+    //   <NavBar />
+    //   <ItemListContainer saludo="Catálogo de Software" />
+    //   <Main />
+    // </div>
   );
 }
 
