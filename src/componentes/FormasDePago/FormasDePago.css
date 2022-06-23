@@ -1,0 +1,67 @@
+.catalogo__precios {
+  margin: 1.5rem 0rem;
+  padding: 0.5rem;
+  width: 100%;
+  height: auto;
+  background: #252525;
+}
+.catalogo__precios h2 {
+  text-align: center;
+  font-size: 2.7rem;
+  font-weight: 400;
+  color: #f8f9fa;
+}
+.catalogo__precios__fila {
+  margin: 1.5rem 0rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.catalogo__precios__fila__columnaI {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+}
+.catalogo__precios__fila__columnaI img {
+  width: 80%;
+}
+.catalogo__precios__fila__columnaD {
+  width: 95%;
+}
+.catalogo__precios__fila__columnaD h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #f8f9fa;
+}
+.catalogo__precios__fila__columnaD p {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #f8f9fa;
+}
+
+@media screen and (min-width: 768px) {
+  .catalogo__precios__fila {
+    flex-direction: row;
+  }
+  .catalogo__precios__fila__columnaD h3 {
+    color: #a090c5;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .catalogo__precios__fila {
+    flex-direction: row;
+  }
+  .catalogo__precios__fila__columnaD h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+  .catalogo__precios__fila__columnaD p {
+    font-size: 1.5rem;
+  }
+}

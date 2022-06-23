@@ -3,9 +3,9 @@ import { productos } from "../../mock/products";
 import ItemList from "../ItemList/ItemList";
 import React, { useEffect, useState } from "react";
 
-import "./itemListContainer.css";
+import "./itemDetailContainer.css";
 
-const ItemListContainer = ({ saludo }) => {
+const ItemDetailContainer = ({ saludo }) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -35,4 +35,4 @@ const ItemListContainer = ({ saludo }) => {
   );
 };
 
-export default ItemListContainer;
+export default ItemDetailContainer;

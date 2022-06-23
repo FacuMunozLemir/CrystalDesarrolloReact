@@ -2,6 +2,8 @@ import "./App.css";
 import NavBar from "./componentes/NavBar/NavBar";
 import ItemExpandido from "./componentes/itemExpandido/ItemExpandido";
 import Main from "./componentes/Main/Main.jsx";
+import Footer from "./componentes/Footer/Footer";
+import FormasDePago from "./componentes/FormasDePago/FormasDePago";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -9,11 +11,12 @@ function App() {
     <div className="container" name="app">
       <BrowserRouter>
         <NavBar />
-
         <Routes>
           <Route exact path="/" element={<Main />} />
           <Route path="/descripcion" element={<ItemExpandido />} />
         </Routes>
+        <FormasDePago />
+        <Footer></Footer>
       </BrowserRouter>
     </div>
     // <div className="App">
