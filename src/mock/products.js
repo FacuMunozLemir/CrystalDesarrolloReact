@@ -1,6 +1,7 @@
 export const productos = [
   {
     id: 1,
+    category: 3,
     img: "./img/Imagen1.png",
     name: "Mi Cochera - Windows",
     price: 30000,
@@ -10,6 +11,7 @@ export const productos = [
   },
   {
     id: 2,
+    category: 3,
     img: "./img/Imagen1.png",
     name: "Mi Restaurante - Windows",
     price: 45000,
@@ -19,6 +21,7 @@ export const productos = [
   },
   {
     id: 3,
+    category: 3,
     img: "./img/Imagen1.png",
     name: "Mi Consultorio - Windows",
     price: 45000,
@@ -28,6 +31,7 @@ export const productos = [
   },
   {
     id: 4,
+    category: 2,
     img: "./img/Imagen1.png",
     name: "Mi Cochera - Android",
     price: 20000,
@@ -37,6 +41,7 @@ export const productos = [
   },
   {
     id: 5,
+    category: 2,
     img: "./img/Imagen1.png",
     name: "Mi Restaurante - Android",
     price: 32000,
@@ -46,6 +51,7 @@ export const productos = [
   },
   {
     id: 6,
+    category: 2,
     img: "./img/Imagen1.png",
     name: "Mi Gimnasio - Android",
     price: 25000,

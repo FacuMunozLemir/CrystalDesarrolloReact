@@ -1,6 +1,6 @@
 import "./App.css";
 import NavBar from "./componentes/NavBar/NavBar";
-import ItemExpandido from "./componentes/itemExpandido/ItemExpandido";
+import ProductDetail from "./componentes/ProductDetail/ProductDetail";
 import Main from "./componentes/Main/Main.jsx";
 import Footer from "./componentes/Footer/Footer";
 import FormasDePago from "./componentes/FormasDePago/FormasDePago";
@@ -12,28 +12,15 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route exact path="/" element={<Main />} />
-          <Route path="/descripcion" element={<ItemExpandido />} />
+          <Route path="/" element={<Main />} />
+          <Route path="/formasDePago" href="#prices" />
+          <Route path={`/descripcion`} element={<ProductDetail />} />
         </Routes>
-        <FormasDePago />
-        <Footer></Footer>
+        <FormasDePago id="formasDePago" />
+        <Footer />
       </BrowserRouter>
     </div>
-    // <div className="App">
-    //   <NavBar />
-    //   <ItemListContainer saludo="Catálogo de Software" />
-    //   <Main />
-    // </div>
   );
 }
 
 export default App;
-
-// {/* <BrowserRouter>
-// <NavBar />
-// <Main />
-// <Routes>
-//   <Route path="/" element={<Contador />} />{" "}
-//   {/* elment es una funcion */}
-// <Routes>
-// <BrowserRouter> */}

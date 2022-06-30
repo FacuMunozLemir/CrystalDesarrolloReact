@@ -3,8 +3,8 @@ import Item from "../Item/Item";
 const ItemList = ({ items }) => {
   return (
     <div className="areaTarjeta">
-      {items.map((item) => (
-        <Item key={item.id} item={item} />
+      {items.map((el) => (
+        <Item key={el.id} item={el} />
       ))}
     </div>
   );

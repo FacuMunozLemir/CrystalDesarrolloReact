@@ -12,7 +12,7 @@ const Item = ({ item }) => {
       <ItemCount stock={item.stock} initial={1} />
       <div className="areaBoton">
         <button className="btn btn-descripcion">
-          <Link to="/descripcion">Descripcion</Link>
+          <Link to={`/description/${item.id}`}>Descripción</Link>
         </button>
 
         <button className="btn btn-comprar">Comprar</button>
