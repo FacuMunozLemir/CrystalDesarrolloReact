@@ -24,10 +24,25 @@
   font-size: 1.4rem;
 }
 
+.items a {
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #252525;
+}
+
+.items a:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 0.4s all ease;
+}
 .items li {
   margin-right: 2rem;
   display: flex;
   align-items: center;
+  text-decoration: none;
+  color: #252525;
 }
 
 .items li:hover {

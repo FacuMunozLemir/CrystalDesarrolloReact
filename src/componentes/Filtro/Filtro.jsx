@@ -1,4 +1,5 @@
 import "./filtro.css";
+import { Link } from "react-router-dom";
 
 function Filtro(props) {
   const { Items } = props;
@@ -24,11 +25,19 @@ function Filtro(props) {
       <h3>Filtrar por SO:</h3>
       <div className="filtro--busqueda">
         <select name="filtro" id="filtro">
-          <option value={1}>Todos</option>
-          <option value={2}>Android</option>
-          <option value={3}>Windows</option>
+          <option selected disabled>
+            Selecciona un S.O.
+          </option>
+          <option>
+            <Link to="/">Todos</Link>
+          </option>
+          <option>
+            <Link to="/category/android">Android</Link>
+          </option>
+          <option>
+            <Link to="/category/windows">Windows</Link>
+          </option>
         </select>
-        <button className="btnFiltrar">Filtrar</button>
       </div>
     </div>
   );

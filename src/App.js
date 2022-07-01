@@ -1,24 +1,27 @@
 import "./App.css";
 import NavBar from "./componentes/NavBar/NavBar";
-import ProductDetail from "./componentes/ProductDetail/ProductDetail";
-import Main from "./componentes/Main/Main.jsx";
+import ItemListContainer from "./componentes/ItemListContainer/ItemListContainer";
+import ItemDetailContainer from "./componentes/ItemDetailContainer/ItemDetailContainer";
 import Footer from "./componentes/Footer/Footer";
 import FormasDePago from "./componentes/FormasDePago/FormasDePago";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div className="container" name="app">
-      <BrowserRouter>
+      <Router>
         <NavBar />
         <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/formasDePago" href="#prices" />
-          <Route path={`/descripcion`} element={<ProductDetail />} />
+          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/category/:categoryId" element={<ItemListContainer />} />
+          <Route
+            path="/Producto/:itemId"
+            element={<ItemDetailContainer greeting="Detalle del Producto" />}
+          />
         </Routes>
-        <FormasDePago id="formasDePago" />
+        <FormasDePago />
         <Footer />
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }

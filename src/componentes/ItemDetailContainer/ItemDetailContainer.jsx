@@ -1,4 +1,4 @@
-export default function productDetail(detail) {
+export default function itemDetailContainer(detail) {
   return (
     <div className="productDetail">
       <div className="productDetailRow">

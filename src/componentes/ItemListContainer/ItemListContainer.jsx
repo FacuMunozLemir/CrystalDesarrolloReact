@@ -15,22 +15,22 @@ function ItemListContainer() {
   useEffect(() => {
     const traerProductos = new Promise((res) => {
       setTimeout(() => {
-        res(
-          categoryId
-            ? products.filter((item) => item.categoryId == categoryId)
-            : productos
-        );
+        res(productos);
       }, 2000);
     });
 
     traerProductos
       .then((res) => {
-        setProducts(res);
+        const categoryFilter = categoryId
+          ? res.filter((item) => item.category == categoryId)
+          : res;
+        setProducts(categoryFilter);
+        console.log(categoryFilter);
       })
       .catch((error) => {
         console.log(error);
       });
-  }, [products]);
+  }, [categoryId]);
 
   return (
     <div className="item-list-container">
