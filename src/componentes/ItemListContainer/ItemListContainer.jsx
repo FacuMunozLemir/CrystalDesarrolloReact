@@ -7,11 +7,9 @@ import { useParams } from "react-router-dom";
 
 function ItemListContainer() {
   let { categoryId } = useParams();
-
   const [products, setProducts] = useState([]);
 
   //El use Effect es una especie de Listener
-
   useEffect(() => {
     const traerProductos = new Promise((res) => {
       setTimeout(() => {
