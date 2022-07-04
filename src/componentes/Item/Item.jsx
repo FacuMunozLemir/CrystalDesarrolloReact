@@ -8,7 +8,7 @@ const Item = ({ item }) => {
     <div className="card">
       <div className="titulo">{item.name}</div>
       <div className="descripcion">{item.description}</div>
-      <div className="descripcion">${item.price}</div>
+      <div className="descripcion precio">${item.price}</div>
       <ItemCount stock={item.stock} initial={1} />
       <div className="areaBoton">
         <Link to={`/description/${item.id}`}>Descripción</Link>

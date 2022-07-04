@@ -2,7 +2,7 @@ export const productos = [
   {
     id: "1",
     category: "windows",
-    img: "./img/Imagen1.png",
+    img: "../img/Imagen1.png",
     name: "Mi Cochera - Windows",
     price: 30000,
     stock: 10,
@@ -12,7 +12,7 @@ export const productos = [
   {
     id: "2",
     category: "windows",
-    img: "./img/Imagen1.png",
+    img: "../img/Imagen1.png",
     name: "Mi Restaurante - Windows",
     price: 45000,
     stock: 10,
@@ -22,7 +22,7 @@ export const productos = [
   {
     id: "3",
     category: "windows",
-    img: "./img/Imagen1.png",
+    img: "../img/Imagen1.png",
     name: "Mi Consultorio - Windows",
     price: 45000,
     stock: 10,
@@ -32,7 +32,7 @@ export const productos = [
   {
     id: "4",
     category: "android",
-    img: "./img/Imagen1.png",
+    img: "../img/Imagen1.png",
     name: "Mi Cochera - Android",
     price: 20000,
     stock: 10,
@@ -42,7 +42,7 @@ export const productos = [
   {
     id: "5",
     category: "android",
-    img: "./img/Imagen1.png",
+    img: "../img/Imagen1.png",
     name: "Mi Restaurante - Android",
     price: 32000,
     stock: 10,
@@ -52,7 +52,7 @@ export const productos = [
   {
     id: "6",
     category: "android",
-    img: "./img/Imagen1.png",
+    img: "../img/Imagen1.png",
     name: "Mi Gimnasio - Android",
     price: 25000,
     stock: 10,

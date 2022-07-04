@@ -2,7 +2,7 @@ import { productos } from "../../mock/products";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-
+import "./itemDetailContainer.css";
 function ItemDetailContainer() {
   let { productId } = useParams();
   const [product, setProduct] = useState([]);
@@ -10,25 +10,23 @@ function ItemDetailContainer() {
   useEffect(() => {
     const traerProducto = new Promise((res) => {
       setTimeout(() => {
-        res(productos);
-      }, 2000);
+        res(productos[0]);
+      }, 600);
     });
 
     traerProducto
       .then((res) => {
-        const productFilter = productId
-          ? res.filter((item) => item.id == productId)
-          : res;
-        setProduct(productFilter);
+        setProduct(res);
       })
       .catch((error) => {
         console.log(error);
       });
-  }, [productId]);
+  }, []);
 
   return (
     <div className="item-detail-container">
-      <ItemDetail items={product} />
+      <h2>Detalles del producto</h2>
+      <ItemDetail item={product} />
     </div>
   );
 }

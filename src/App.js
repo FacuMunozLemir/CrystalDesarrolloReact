@@ -19,9 +19,9 @@ function App() {
             element={<ItemDetailContainer greeting="Detalle del Producto" />}
           />
         </Routes>
-        <FormasDePago />
-        <Footer />
       </Router>
+      <FormasDePago />
+      <Footer />
     </div>
   );
 }

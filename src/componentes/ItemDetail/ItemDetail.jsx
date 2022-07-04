@@ -1,13 +1,19 @@
-import { Link } from "react-router-dom";
-import { productos } from "../../mock/products";
 import React, { useEffect, useState } from "react";
+import "./ItemDetail.css";
 
-function ItemDetail(producto) {
-  console.log(producto.items[0]);
+function ItemDetail({ item }) {
   return (
-    <div>
-      <h2>Detalles del producto</h2>
+    <div className="fila">
+      <div className="columnaI">
+        <img src={item.img} alt={item.name} />
+      </div>
+      <div className="columnaD">
+        <div className="titulo">{item.name}</div>
+        <div className="descripcion">{item.description}</div>
+        <div className="precio">Precio final por unidad ${item.price}</div>
+      </div>
     </div>
   );
 }
+
 export default ItemDetail;
