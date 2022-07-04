@@ -1,6 +1,6 @@
 export const productos = [
   {
-    id: 1,
+    id: "1",
     category: "windows",
     img: "./img/Imagen1.png",
     name: "Mi Cochera - Windows",
@@ -10,7 +10,7 @@ export const productos = [
       "Programa para computadoras con SO Windows principalmente pensado para llevar el control de la entrada/salida de los vehículos en una 'cochera' o 'parking' ",
   },
   {
-    id: 2,
+    id: "2",
     category: "windows",
     img: "./img/Imagen1.png",
     name: "Mi Restaurante - Windows",
@@ -20,7 +20,7 @@ export const productos = [
       "Programa para computadoras con SO Windows principalmente pensado para llevar el control de las ventas, mesas y comandas de tu restaurante",
   },
   {
-    id: 3,
+    id: "3",
     category: "windows",
     img: "./img/Imagen1.png",
     name: "Mi Consultorio - Windows",
@@ -30,7 +30,7 @@ export const productos = [
       "Programa para computadoras con SO Windows principalmente pensado para llevar el control tus pacientes, con sus fichas medicas, fotos, y mucho más",
   },
   {
-    id: 4,
+    id: "4",
     category: "android",
     img: "./img/Imagen1.png",
     name: "Mi Cochera - Android",
@@ -40,7 +40,7 @@ export const productos = [
       "Programa para computadoras con SO Android principalmente pensado para llevar el control de la entrada/salida de los vehículos en una 'cochera' o 'parking' ",
   },
   {
-    id: 5,
+    id: "5",
     category: "android",
     img: "./img/Imagen1.png",
     name: "Mi Restaurante - Android",
@@ -50,7 +50,7 @@ export const productos = [
       "Programa para computadoras con SO Android principalmente pensado para llevar el control de las ventas, mesas y comandas de tu restaurante",
   },
   {
-    id: 6,
+    id: "6",
     category: "android",
     img: "./img/Imagen1.png",
     name: "Mi Gimnasio - Android",

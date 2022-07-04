@@ -1,40 +1,32 @@
 import "./filtro.css";
 import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 
 function Filtro(props) {
   const { Items } = props;
 
   let select = document.getElementById("filtro");
 
-  function handleSubmit() {
-    const filterValue = [];
+  const [selected, setSelected] = useState("");
 
-    // console.log(select.value);
-    // console.log(Items);
-    Items.map((el) => {
-      // console.log(el.category);
-      if (el.category == select.value) {
-        filterValue.push(el);
-        // console.log(filterValue);
-      }
-    });
-  }
+  const handleChange = (event) => {
+    console.log(event.target.value);
+    setSelected(event.target.value);
+  };
 
   return (
     <div className="filtro">
       <h3>Filtrar por SO:</h3>
       <div className="filtro--busqueda">
-        <select name="filtro" id="filtro">
-          <option selected disabled>
-            Selecciona un S.O.
-          </option>
-          <option>
+        <select name="filtro" id="filtro" onChange={handleChange}>
+          <option>Selecciona un S.O.</option>
+          <option value="/">
             <Link to="/">Todos</Link>
           </option>
-          <option>
+          <option value="/category/android">
             <Link to="/category/android">Android</Link>
           </option>
-          <option>
+          <option value="/category/windows">
             <Link to="/category/windows">Windows</Link>
           </option>
         </select>

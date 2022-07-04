@@ -4,7 +4,7 @@ export default function CartWidget({ title, handleOnClick }) {
   return (
     <li onClick={handleOnClick}>
       {title}
-      <img src={cartImg} alt="" width={"40"} />
+      <img src={cartImg} alt="" width={"30"} />
     </li>
   );
 }
